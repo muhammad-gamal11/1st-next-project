@@ -1,36 +1,32 @@
-import Link from "next/link";
 import styles from "./links.module.css";
+import NavLink from "./navLink/navLink";
 
 const Links = () => {
   const links = [
     {
       title: "HomePage",
-      link: "/",
+      path: "/",
     },
     {
       title: "About",
-      link: "/about",
+      path: "/about",
     },
 
     {
       title: "Blog",
-      link: "/blog",
+      path: "/blog",
     },
     {
       title: "Contact",
-      link: "/contact",
+      path: "/contact",
     },
   ];
 
   return (
     <div className={styles.links}>
-      {links.map((link) => {
-        return (
-          <Link href={link.link} key={link.title}>
-            {link.title}
-          </Link>
-        );
-      })}
+      {links.map((link) => (
+        <NavLink item={link} key={link.title} />
+      ))}
     </div>
   );
 };
