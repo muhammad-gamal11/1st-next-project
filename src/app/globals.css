@@ -25,3 +25,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.container{
+  width: 85%;
+  margin: auto;
+  padding: 0 50px;
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
