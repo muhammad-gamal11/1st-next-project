@@ -10,13 +10,12 @@ const About = () => {
           We create digital ideas that are bigger, bolder, braver and better
         </h1>
         <p className={styles.desc}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-          omnis deleniti nam maxime quis voluptatum officia excepturi ut odit.
-          Perspiciatis repudiandae, reprehenderit iusto minus velit quam illo
-          mollitia! Iure voluptas neque, quas dignissimos facilis labore quis
-          ipsa, accusamus sapiente vero sequi suscipit eos nam illo perferendis
-          corrupti vitae. Aperiam eveniet laborum aliquam quo magni eius. Magnam
-          molestiae voluptatibus natus eveniet.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+          deserunt unde mollitia incidunt ipsa veritatis laboriosam assumenda
+          doloremque dignissimos omnis illo nihil animi, provident rem, quidem,
+          accusamus tempora error. Distinctio, autem corrupti aliquam ducimus
+          qui aliquid nesciunt nisi dicta totam recusandae id explicabo error
+          sunt vel. Tempora vero blanditiis aliquam.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
