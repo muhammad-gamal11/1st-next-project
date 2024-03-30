@@ -11,7 +11,7 @@
 }
 
 .title {
-  font-size: 96px;
+  font-size: 50px;
 }
 
 .desc {
@@ -29,6 +29,7 @@
   cursor: pointer;
   border: 0;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .button:first-child {
@@ -51,4 +52,10 @@
 .imgContainer {
   flex: 1;
   position: relative;
+}
+
+.heroImg {
+  /* width: 400px; */
+  /* height: 400px; */
+  object-fit: contain;
 }
