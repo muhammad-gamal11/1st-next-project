@@ -1,3 +1,4 @@
+"use client";
 import styles from "./contact.module.css";
 import Image from "next/image";
 const Contact = () => {
@@ -18,7 +19,9 @@ const Contact = () => {
             rows="10"
             placeholder="Message"
           ></textarea>
-          <button className={styles.btn}>Send</button>
+          <button className={styles.btn} onClick={(e) => e.preventDefault()}>
+            Send
+          </button>
         </form>
       </div>
     </div>
