@@ -1,7 +1,23 @@
 import Image from "next/image";
-
 import styles from "./singlePost.module.css";
-const SinglePostPage = () => {
+
+const getData = async (slug) => {
+  const url = "https://jsonplaceholder.typicode.com/posts/";
+  const response = await fetch(`${url}${slug}`);
+  // if (!response.ok) {
+  //   throw new Error("Something went wrong");
+  // }
+  const data = await response.json();
+  // console.log(data);
+  return data;
+};
+
+const SinglePostPage = async ({ params }) => {
+  const { slug } = params;
+
+  const post = await getData(slug);
+  console.log(post);
+
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
@@ -31,12 +47,7 @@ const SinglePostPage = () => {
             <span className={styles.detailValue}>01.01.2024</span>
           </div>
         </div>
-        <div className={styles.contact}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio
-          delectus voluptas beatae numquam praesentium saepe, corrupti
-          repellendus eligendi, assumenda repellat reprehenderit? Est magni quas
-          corrupti nihil et nemo sint.
-        </div>
+        <div className={styles.contact}>{}</div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 const PostCard = ({ post }) => {
   // console.log(post);
-  const { title, body } = post;
+  const { id, title, body } = post;
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -20,7 +20,7 @@ const PostCard = ({ post }) => {
       <div className={styles.bottom}>
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.desc}>{body}</p>
-        <Link className={styles.link} href="/blog/post">
+        <Link className={styles.link} href={`/blog/${id}`}>
           READ MORE
         </Link>
       </div>
