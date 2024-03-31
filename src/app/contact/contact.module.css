@@ -43,3 +43,9 @@
   padding: 10px 15px;
   border-radius: 7px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
